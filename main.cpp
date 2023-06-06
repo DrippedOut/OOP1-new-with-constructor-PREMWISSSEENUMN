@@ -1,41 +1,38 @@
 #include <iostream>
 using namespace std;
 
-#include "student.h"
+#include "monster.h"
 
-int main() {
-/*  student s1,s2;
+int main(int argc, char *argv[]) { 
+  // Create new pointer
+  //monster *p = new monster("Jorge"); // pointer needs to be "delete"
+  
+  // Delete pointer p
+  //delete p;
 
- // s1.name="PUN";  // ERROR, it is in private
-    s1.set_name("Pun");  	s1.set_age(20); 
-		s2.set_name("Joe");
-		s2.set_age(27); 
-		
-    s1.get_age()>s2.get_age() ?
-    s1.print_name(): s2.print_name(); 
-   if( s1.get_age()>s2.get_age() )
-     s1.print_name();
-       else  s2.print_name(); 
-      cout <<"is older"<<endl;
-*/
-     student Cst[10],*p;
-     int i;
-     string n;
-     for(i=0;i<3;i++){
-         cout<<"What is your name?";
-         cin>>n;
-         Cst[i].set_name(n);
-     }
-    for(i=0;i<3;i++){
-       
-         Cst[i].print_name();
-     }
-    cout<<endl;
-    cout<<"Pointer"<<endl;
-    p=&Cst[2];
-    (*p).print_name();
-    p->print_name();
-    (p-1)->print_name();
+  //monster A("Naz", 10, 30);
+
+  //p=&A;
+  
+  // p = new monster[3]; // constructor doesn't get called
+
+  if(A == *p)
+    cout << "They have the same hp" << endl;
+    else 
+    cout << "They have different hp" << endl;
+  }
+
+  A++;
+  (*p)+=5;
+  A.print();
+  p->print
+  
+  // delete p;
+  
+  //monster A("Heart"), B("Herb", 20), C("Jod", 15, 20);
+  // monster D; // Create object with all default values
+  //monster x[10] = {{"Lookname", 30, 50}, {"Fill"}, {"Mark",15 }}; create array size 10 of monster objects with the first 3 specified
 }
 
-//CST --> Joe  Jim Jan*
+/*Destructor: Clears objects -- gets called automatically*/
+
